@@ -23,7 +23,7 @@ public class Graph {
                 if(j != i){
                     String w1 = words.get(i);
                     String w2 = words.get(j);
-                    if(controlLetters(w1, w2)){
+                    if(compareLetters(w1, w2)){
                         addEdge(i, j);
                     }
                 }
@@ -31,7 +31,7 @@ public class Graph {
         }
     }
 
-    public static boolean controlLetters(String w1, String w2) {
+    public static boolean compareLetters(String w1, String w2) {
         String word = w1;
         boolean[] charPicked = new boolean[w2.length()];
         boolean charFound = false;
