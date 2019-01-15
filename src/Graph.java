@@ -31,7 +31,7 @@ public class Graph {
         }
     }
 
-    public static boolean compareLetters(String w1, String w2) {
+    public boolean compareLetters(String w1, String w2) {
         String word = w1;
         boolean[] charPicked = new boolean[w2.length()];
         boolean charFound = false;
